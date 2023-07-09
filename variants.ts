@@ -1,4 +1,9 @@
-export const fadeIn = (direction, delay) => {
+interface FadeInProps {
+  direction: 'up' | 'down' | 'right' | 'left';
+  delay: number;
+};
+
+export const fadeIn = (direction: FadeInProps['direction'], delay: FadeInProps['delay']) => {
   return {
     hidden: {
       y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
