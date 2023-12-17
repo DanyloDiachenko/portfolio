@@ -11,8 +11,8 @@ const Header = (): JSX.Element => {
                     <Link href="/">
                         <Image
                             src="/logo.svg"
-                            width={220}
-                            height={48}
+                            width={261}
+                            height={27}
                             alt="logo photo"
                             priority={true}
                         />

@@ -6,53 +6,74 @@ import {
     FaJs,
     FaReact,
     FaFigma,
-    FaWordpress,
+    FaNpm,
+    FaNodeJs,
+    FaJira,
+    FaTrello,
 } from "react-icons/fa";
 import {
-    SiNextdotjs,
-    SiFramer,
-    SiAdobexd,
+    SiSass,
+    SiPython,
     SiAdobephotoshop,
+    SiTypescript,
+    SiNestjs,
+    SiMongodb,
+    SiPostgresql,
+    SiSwagger,
 } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../../variants";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
-//  data
-const aboutData = [
+interface IAboutDataItem {
+    title: string;
+    info: {
+        title: string;
+        icons?: JSX.Element[];
+        stage?: string;
+    }[];
+}
+
+const aboutData: IAboutDataItem[] = [
     {
         title: "skills",
         info: [
             {
-                title: "Web Development",
+                title: "Programming Languages",
+                icons: [<FaJs />, <SiTypescript />, <SiPython />],
+            },
+            {
+                title: "Web Frontend Development",
                 icons: [
                     <FaHtml5 />,
                     <FaCss3 />,
-                    <FaJs />,
                     <FaReact />,
-                    <SiNextdotjs />,
-                    <SiFramer />,
-                    <FaWordpress />,
+                    <TbBrandNextjs />,
+                    <SiSass />,
+                    <FaNpm />,
+                ],
+            },
+            {
+                title: "Web Backend Development",
+                icons: [
+                    <FaNodeJs />,
+                    <SiNestjs />,
+                    <SiMongodb />,
+                    <SiPostgresql />,
+                    <SiSwagger />,
+                    <FaNpm />,
                 ],
             },
             {
                 title: "UI/UX Design",
-                icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-            },
-        ],
-    },
-    {
-        title: "awards",
-        info: [
-            {
-                title: "Webby Awards - Honoree",
-                stage: "2011 - 2012",
+                icons: [<FaFigma />, <SiAdobephotoshop />],
             },
             {
-                title: "Adobe Design Achievement Awards - Finalist",
-                stage: "2009 - 2010",
+                title: "Team Management Tools",
+                icons: [<FaJira />, <FaTrello />],
             },
         ],
     },
@@ -60,21 +81,25 @@ const aboutData = [
         title: "experience",
         info: [
             {
-                title: "UX/UI Designer - XYZ Company",
-                stage: "2012 - 2023",
+                title: "Learning Frontend Development - self",
+                stage: "Jun 2022 - Aug 2022",
             },
             {
-                title: "Web Developer - ABC Agency",
-                stage: "2010 - 2012",
+                title: "Frontend Developer - Digital Art Agency",
+                stage: "Aug 2022 - now",
             },
             {
-                title: "Intern - DEF Corporation",
-                stage: "2008 - 2010",
+                title: "Backend Developer - no commerce",
+                stage: "Sep 2023 - now",
             },
+            /* {
+                title: "Backend Developer Intern - Digital Art Agency",
+                stage: "January 2024 - now",
+            }, */
         ],
     },
     {
-        title: "credentials",
+        title: "cources",
         info: [
             {
                 title: "Web Development - ABC University, LA, CA",
@@ -93,10 +118,10 @@ const aboutData = [
 ];
 
 const About = (): JSX.Element => {
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState<number>(0);
 
     return (
-        <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+        <div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-scroll">
             <Circles />
             <motion.div
                 variants={fadeIn("right", 0.2)}
@@ -124,12 +149,14 @@ const About = (): JSX.Element => {
                         initial="hidden"
                         animate="show"
                         exit="hidden"
-                        className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+                        className="max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
                     >
-                        10 years ago, I began freelancing as a developer. Since
-                        then, I`ve done remote work for agencies, counsulted for
-                        startups, and collaborated on digital products for
-                        bussiness and consumer use.
+                        Two years ago, I joined a startup company and embarked
+                        on my career in web-development. During this time, I've
+                        been involved in both individual projects and
+                        collaborative team efforts, developing digital products
+                        for business and consumer use, taking on significant
+                        endeavors.
                     </motion.p>
                     <motion.div
                         variants={fadeIn("right", 0.6)}
@@ -144,7 +171,14 @@ const About = (): JSX.Element => {
                after:bg-white/10 after:absolute after:top-0 after:right-0"
                             >
                                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                                    <CountUp start={0} end={10} duration={5} />{" "}
+                                    <CountUp
+                                        start={0.0}
+                                        end={1.5}
+                                        duration={5}
+                                        separator=" "
+                                        decimals={1}
+                                        decimal="."
+                                    />{" "}
                                     +
                                 </div>
                                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
@@ -156,7 +190,7 @@ const About = (): JSX.Element => {
                after:bg-white/10 after:absolute after:top-0 after:right-0"
                             >
                                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                                    <CountUp start={0} end={250} duration={5} />{" "}
+                                    <CountUp start={0} end={30} duration={5} />{" "}
                                     +
                                 </div>
                                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
@@ -168,19 +202,11 @@ const About = (): JSX.Element => {
                after:bg-white/10 after:absolute after:top-0 after:right-0"
                             >
                                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                                    <CountUp start={0} end={650} duration={5} />{" "}
+                                    <CountUp start={0} end={20} duration={5} />{" "}
                                     +
                                 </div>
                                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                                     Finished projects
-                                </div>
-                            </div>
-                            <div className="relative flex-1">
-                                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                                    <CountUp start={0} end={8} duration={5} /> +
-                                </div>
-                                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                                    Winning awards
                                 </div>
                             </div>
                         </div>
@@ -220,18 +246,24 @@ const About = (): JSX.Element => {
                                         {aboutDataInfo.title}
                                     </div>
                                     <div className="hidden md:flex">-</div>
-                                    <div>{aboutDataInfo.stage}</div>
+                                    <div>
+                                        {aboutDataInfo.stage
+                                            ? aboutDataInfo.stage
+                                            : ""}
+                                    </div>
                                     <div className="flex gap-x-4">
-                                        {aboutDataInfo.icons?.map(
-                                            (icon, iconIndex) => (
-                                                <div
-                                                    key={iconIndex}
-                                                    className="text-2xl text-white"
-                                                >
-                                                    {icon}
-                                                </div>
-                                            )
-                                        )}
+                                        {aboutDataInfo.icons
+                                            ? aboutDataInfo.icons.map(
+                                                  (icon, iconIndex) => (
+                                                      <div
+                                                          key={iconIndex}
+                                                          className="text-2xl text-white"
+                                                      >
+                                                          {icon}
+                                                      </div>
+                                                  )
+                                              )
+                                            : ""}
                                     </div>
                                 </div>
                             )

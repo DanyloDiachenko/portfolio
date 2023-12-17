@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
@@ -12,7 +11,7 @@ const Home = (): JSX.Element => {
             <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
                 <div
                     className="text-center flex flex-col justify-center
-        xl:pt-40 xl:text-left h-full container mx-auto"
+        xl:pt-40 xl:text-left h-full container mx-auto max-xl:pt-20"
                 >
                     <motion.h1
                         variants={fadeIn("down", 0.2)}
