@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Avatar = (): JSX.Element => {
     return (
         <div className="hidden xl:flex xl:max-w-none">
