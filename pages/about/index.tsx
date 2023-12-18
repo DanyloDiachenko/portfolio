@@ -10,6 +10,7 @@ import {
     FaNodeJs,
     FaJira,
     FaTrello,
+    FaGithub,
 } from "react-icons/fa";
 import {
     SiSass,
@@ -20,8 +21,10 @@ import {
     SiMongodb,
     SiPostgresql,
     SiSwagger,
+    SiRedux,
+    SiVisualstudio,
 } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbSeo } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../../variants";
@@ -54,6 +57,8 @@ const aboutData: IAboutDataItem[] = [
                     <TbBrandNextjs />,
                     <SiSass />,
                     <FaNpm />,
+                    <SiRedux />,
+                    <TbSeo />,
                 ],
             },
             {
@@ -75,15 +80,15 @@ const aboutData: IAboutDataItem[] = [
                 title: "Team Management Tools",
                 icons: [<FaJira />, <FaTrello />],
             },
+            {
+                title: "Additional Skills",
+                icons: [<FaGithub />, <SiVisualstudio />],
+            },
         ],
     },
     {
         title: "experience",
         info: [
-            {
-                title: "Learning Frontend Development - self",
-                stage: "Jun 2022 - Aug 2022",
-            },
             {
                 title: "Frontend Developer - Digital Art Agency",
                 stage: "Aug 2022 - now",
@@ -102,16 +107,12 @@ const aboutData: IAboutDataItem[] = [
         title: "cources",
         info: [
             {
-                title: "Web Development - ABC University, LA, CA",
-                stage: "2011",
+                title: "Frontend Developer - IT School GoIT",
+                stage: "2022-2023",
             },
             {
-                title: "Computer Science Diploma - AV Technical Institute",
-                stage: "2009",
-            },
-            {
-                title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-                stage: "2006",
+                title: "Software engineering - Kyiv Politechnic Institute",
+                stage: "2023 - now",
             },
         ],
     },
@@ -121,7 +122,7 @@ const About = (): JSX.Element => {
     const [index, setIndex] = useState<number>(0);
 
     return (
-        <div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-scroll">
+        <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
             <Circles />
             <motion.div
                 variants={fadeIn("right", 0.2)}
@@ -132,7 +133,7 @@ const About = (): JSX.Element => {
             >
                 <Avatar />
             </motion.div>
-            <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+            <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 max-xl:overflow-y-auto">
                 <div className="flex-1 flex flex-col justify-center">
                     <motion.h2
                         variants={fadeIn("right", 0.2)}
@@ -261,12 +262,12 @@ const About = (): JSX.Element => {
                                                       >
                                                           {icon}
                                                       </div>
-                                                  )
+                                                  ),
                                               )
                                             : ""}
                                     </div>
                                 </div>
-                            )
+                            ),
                         )}
                     </div>
                 </motion.div>

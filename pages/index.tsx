@@ -7,7 +7,7 @@ import Avatar from "../components/Avatar";
 
 const Home = (): JSX.Element => {
     return (
-        <div className="bg-primary/60 h-full">
+        <div className="bg-primary/60 h-full ">
             <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
                 <div
                     className="text-center flex flex-col justify-center
