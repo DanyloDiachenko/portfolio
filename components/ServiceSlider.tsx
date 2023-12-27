@@ -1,13 +1,5 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper";
-import {
-    RxCrop,
-    RxDesktop,
-    RxPencil2,
-    RxReader,
-    RxRocket,
-    RxArrowTopRight,
-} from "react-icons/rx";
+import Link from "next/link";
+import { RxDesktop, RxArrowTopRight } from "react-icons/rx";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -15,54 +7,23 @@ import "swiper/css/pagination";
 
 const serviceData = [
     {
-        icon: <RxCrop />,
-        title: "Branding",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-        icon: <RxPencil2 />,
-        title: "Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
         icon: <RxDesktop />,
         title: "Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-        icon: <RxReader />,
-        title: "Copywriting",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-        icon: <RxRocket />,
-        title: "SEO",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description:
+            "Explore my GitHub repositories to witness a portfolio of diverse projects, showcasing my expertise in turning complex requirements into reality. If you're seeking a partnership that values creativity, technical skill, and a commitment to excellence, let's connect and discuss how we can collaborate on your next web development venture",
+        link: "https://github.com/DanyloDiachenko",
     },
 ];
 
 const ServiceSlider = (): JSX.Element => {
     return (
-        <Swiper
-            breakpoints={{
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 15,
-                },
-                640: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-            }}
-            freeMode={true}
-            pagination={{
-                clickable: true,
-            }}
-            modules={[FreeMode, Pagination]}
-            className="h-[240px] sm:h-[340px]"
-        >
+        <div className="h-[240px] sm:h-[500px]">
             {serviceData.map((serviceDataItem, serviceDataItemIndex) => (
-                <SwiperSlide key={serviceDataItemIndex}>
+                <Link
+                    href={serviceDataItem.link}
+                    target="_blank"
+                    key={serviceDataItemIndex}
+                >
                     <div
                         className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg 
           px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer
@@ -75,7 +36,7 @@ const ServiceSlider = (): JSX.Element => {
                             <div className="mb-2 text-lg">
                                 {serviceDataItem.title}
                             </div>
-                            <p className="max-w-[350px] leading-normal">
+                            <p className="leading-normal">
                                 {serviceDataItem.description}
                             </p>
                         </div>
@@ -83,9 +44,9 @@ const ServiceSlider = (): JSX.Element => {
                             <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
                         </div>
                     </div>
-                </SwiperSlide>
+                </Link>
             ))}
-        </Swiper>
+        </div>
     );
 };
 

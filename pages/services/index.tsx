@@ -7,9 +7,9 @@ import Circles from "../../components/Circles";
 
 const Services = (): JSX.Element => {
     return (
-        <div className="h-full bg-primary/30 py-36 flex items-center">
+        <div className="h-full bg-primary/30 py-36 flex items-center max-xl:pt-60">
             <Circles />
-            <div className="container mx-auto">
+            <div className="container mx-auto max-xl:overflow-y-auto">
                 <div className="flex flex-col xl:flex-row gap-x-8">
                     <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
                         <motion.h2
@@ -29,9 +29,13 @@ const Services = (): JSX.Element => {
                             exit="hidden"
                             className="mb-4 max-w-[400px] mx-auto lg:mx-0"
                         >
-                            Lorem ipsum dolor sit, amet consectetur adipidicing
-                            elit. A eveniet dignissimos distinctio tempore harum
-                            laudantium.
+                            As a full-stack web developer, I offer comprehensive
+                            solutions for web development, combining
+                            cutting-edge frontend and backend technologies to
+                            create dynamic, functional, and visually appealing
+                            websites. From minor tweaks to large-scale projects,
+                            I ensure quality and innovation at every stage of
+                            development.
                         </motion.p>
                     </div>
                     <motion.div
