@@ -1,9 +1,33 @@
+"use client";
+
+import { ChangeEvent, FormEvent, useState } from "react";
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 
 import { fadeIn } from "../../variants";
 
 const Contact = (): JSX.Element => {
+    const [fields, setFields] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+
+    const setFieldsHandler = (
+        field: "name" | "email" | "subject" | "message",
+        e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        setFields({
+            ...fields,
+            [field]: e.target.value,
+        });
+    };
+
+    const submit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    };
+
     return (
         <div className="h-full bg-primary/30">
             <div
@@ -27,33 +51,40 @@ const Contact = (): JSX.Element => {
                         animate="show"
                         exit="hidden"
                         className="flex-1 flex flex-col gap-6 w-full mx-auto"
+                        onSubmit={(e) => submit(e)}
                     >
                         <div className="flex gap-x-6 w-full">
                             <input
                                 type="text"
                                 placeholder="name"
                                 className="input"
+                                onChange={(e) => setFieldsHandler("name", e)}
                             />
                             <input
                                 type="email"
                                 placeholder="email"
                                 className="input"
+                                onChange={(e) => setFieldsHandler("email", e)}
                             />
                         </div>
                         <input
                             type="email"
                             placeholder="subject"
                             className="input"
+                            onChange={(e) => setFieldsHandler("subject", e)}
                         />
                         <textarea
                             placeholder="message"
                             className="textarea"
+                            onChange={(e) => setFieldsHandler("message", e)}
                         ></textarea>
                         <button
                             className="btn rounded-full border border-white/50 max-w-[170px]
               px-8 transition-all duration-300 flex items-center justify-center overflow-hidden
               hover:border-accent group
+              
             "
+                            type="submit"
                         >
                             <span
                                 className="group-hover:-translate-y-[120%] group-hover:opacity-0

@@ -29,9 +29,12 @@ const Work = (): JSX.Element => {
                             exit="hidden"
                             className="mb-4 max-w-[400px] mx-auto lg:mx-0"
                         >
-                            Lorem ipsum dolor sit, amet consectetur adipidicing
-                            elit. A eveniet dignissimos distinctio tempore harum
-                            laudantium.
+                            Welcome to my project portfolio, where each creation
+                            reflects my passion for high-performance and
+                            SEO-optimized web solutions. Here, you will find
+                            examples of my work that combine technical
+                            sophistication and a creative approach, aimed at
+                            achieving optimal results in the digital space.
                         </motion.p>
                     </div>
                     <motion.div
