@@ -14,28 +14,28 @@ const workSlides = {
                 {
                     title: "Spacecore",
                     description:
-                        "SpaceCore - многостраничный проект-визитка, предоставляющий услуги VPS и выделенных серверов с высокой производительностью благодаря серверному рендерингу.",
+                        "SpaceCore - a multi-page showcase project providing high-performance VPS and dedicated servers through server-side rendering.",
                     background: "#3303A9",
                     link: "https://spacecore.pro/",
                 },
                 {
                     title: "Top Cources",
                     description:
-                        "Многостраничный сайт с информацией о разнообразных образовательных курсах и обучающих платформах. Узнайте цены, средний доход и выбирайте курсы для своего обучения.",
+                        "Multi-page website with information about various educational courses and learning platforms. Find prices, average income, and choose courses for your education.",
                     background: "#800909",
                     link: "https://top-cources.vercel.app/",
                 },
                 {
                     title: "Pizza Shop & API",
                     description:
-                        "Онлайн-магазин с разнообразной пиццей. Выбирайте мясные, вегетарианские, острые и другие виды. Удобная навигация с клавиатуры. Собственное API для редактирования пицц.",
+                        "Online store with a variety of pizzas. Choose meat, vegetarian, spicy, and other types. Convenient keyboard navigation. Custom API for pizza editing.",
                     background: "#107C10",
                     link: "https://pizza-shop-teal.vercel.app/",
                 },
                 {
                     title: "Seo Service",
                     description:
-                        "Темплейт предназначен для мониторинга ваших сайтов. Получайте важную информацию о посещаемости и позициях ключевых слов. Узнайте видимость вашего сайта в поисковых системах.",
+                        "Template for monitoring your websites. Get important information about traffic and keyword rankings. Find out your website's visibility in search engines.",
                     background: "#F29559",
                     link: "https://seo-service-iota.vercel.app/",
                 },
@@ -46,28 +46,28 @@ const workSlides = {
                 {
                     title: "Starbucks Coffee",
                     description:
-                        "Онлайн-магазин в стиле Starbucks для выбора и покупки различных кофейных напитков разных размеров. Получите информацию о вашем кофе. Присутствует тестовая оплата.",
+                        "Online store in the style of Starbucks for selecting and purchasing various coffee drinks of different sizes. Get information about your coffee. Includes a test payment feature.",
                     background: "#F29559",
                     link: "https://starbucks-coffee-gules.vercel.app",
                 },
                 {
                     title: "Countries",
                     description:
-                        "Получайте подробную информацию о каждой стране, включая данные о площади, языке, валюте и граничных странах. Легко фильтруйте страны по регионам и выполняйте поиск по названию.",
+                        "Get detailed information about each country, including data on area, language, currency, and neighboring countries. Easily filter countries by regions and search by name.",
                     background: "#107C10",
                     link: "https://countries-nine-drab.vercel.app/",
                 },
                 {
                     title: "Clovin",
                     description:
-                        "Этот сайт-визитка представляет компанию Clovin и ее разнообразный выбор химических продуктов для дома. Узнайте больше о компании, продукции и партнерах.",
+                        "This showcase website represents the company Clovin and its diverse range of household chemical products. Learn more about the company, its products, and partners.",
                     background: "#800909",
                     link: "https://clovin.vercel.app/",
                 },
                 {
                     title: "Fast Forge VPN",
                     description:
-                        "Сайт Fast Forge VPN - верстка для получения услуг VPN. Здесь вы найдете макеты сайта, но отсутствует функциональность. Дополнительные страницы доступны в репозитории на GitHub.",
+                        "Fast Forge VPN website layout for obtaining VPN services. The layout is available here, but the functionality is not included. Additional pages are available in the GitHub repository.",
                     background: "#3303A9",
                     link: "https://danylodiachenko.github.io/FastForgeVPN/main-page.html",
                 },

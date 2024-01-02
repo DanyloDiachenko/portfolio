@@ -49,7 +49,7 @@ const aboutData: IAboutDataItem[] = [
                 icons: [<FaJs />, <SiTypescript />, <SiPython />],
             },
             {
-                title: "Web Frontend Development",
+                title: "Frontend Development",
                 icons: [
                     <FaHtml5 />,
                     <FaCss3 />,
@@ -62,7 +62,7 @@ const aboutData: IAboutDataItem[] = [
                 ],
             },
             {
-                title: "Web Backend Development",
+                title: "Backend Development",
                 icons: [
                     <FaNodeJs />,
                     <SiNestjs />,
