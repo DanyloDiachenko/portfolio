@@ -262,12 +262,12 @@ const About = (): JSX.Element => {
                                                       >
                                                           {icon}
                                                       </div>
-                                                  ),
+                                                  )
                                               )
                                             : ""}
                                     </div>
                                 </div>
-                            ),
+                            )
                         )}
                     </div>
                 </motion.div>
