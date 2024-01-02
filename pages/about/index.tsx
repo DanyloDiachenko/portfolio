@@ -135,7 +135,7 @@ const About = (): JSX.Element => {
             </motion.div>
             <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 max-xl:overflow-y-auto">
                 <div className="flex-1 flex flex-col justify-center">
-                    <motion.h2
+                    <motion.h1
                         variants={fadeIn("right", 0.2)}
                         initial="hidden"
                         animate="show"
@@ -144,7 +144,7 @@ const About = (): JSX.Element => {
                     >
                         Captivating <span className="text-accent">stories</span>{" "}
                         birth magnificent designs.
-                    </motion.h2>
+                    </motion.h1>
                     <motion.p
                         variants={fadeIn("right", 0.4)}
                         initial="hidden"
