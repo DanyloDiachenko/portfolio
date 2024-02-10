@@ -1,1 +1,1 @@
-stage: developing
+stage: ready
