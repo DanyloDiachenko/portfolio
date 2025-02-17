@@ -91,28 +91,32 @@ const aboutData: IAboutDataItem[] = [
         info: [
             {
                 title: "Frontend Developer - Digital Art Agency",
-                stage: "Aug 2022 - now",
+                stage: "Aug 2022 - Jul 2024",
             },
             {
                 title: "Backend Developer - no commerce",
                 stage: "Sep 2023 - now",
             },
-            /* {
-                title: "Backend Developer Intern - Digital Art Agency",
-                stage: "January 2024 - now",
-            }, */
+            {
+                title: "Web Full Stack Developer - no commerce",
+                stage: "Jul 2024 - now",
+            },
         ],
     },
     {
-        title: "cources",
+        title: "education",
         info: [
             {
-                title: "Frontend Developer - IT School GoIT",
+                title: "Frontend Developepment - Front Online",
+                stage: "2022",
+            },
+            {
+                title: "Frontend Developepment - IT School GoIT",
                 stage: "2022-2023",
             },
             {
                 title: "Software engineering - Kyiv Politechnic Institute",
-                stage: "2023 - now",
+                stage: "2024 - now",
             },
         ],
     },
@@ -152,12 +156,12 @@ const About = (): JSX.Element => {
                         exit="hidden"
                         className="max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
                     >
-                        Two years ago, I joined a startup company and embarked
-                        on my career in web-development. During this time, I've
-                        been involved in both individual projects and
+                        Two years ago, I entered into free course with frontend
+                        development and after joined a startup company and
+                        embarked on my career in web-development. During this
+                        time, I've been involved in both individual projects and
                         collaborative team efforts, developing digital products
-                        for business and consumer use, taking on significant
-                        endeavors.
+                        for business and consumer use.
                     </motion.p>
                     <motion.div
                         variants={fadeIn("right", 0.6)}
@@ -174,7 +178,7 @@ const About = (): JSX.Element => {
                                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                                     <CountUp
                                         start={0.0}
-                                        end={1.5}
+                                        end={4}
                                         duration={5}
                                         separator=" "
                                         decimals={1}
@@ -203,7 +207,7 @@ const About = (): JSX.Element => {
                after:bg-white/10 after:absolute after:top-0 after:right-0"
                             >
                                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                                    <CountUp start={0} end={20} duration={5} />{" "}
+                                    <CountUp start={0} end={40} duration={5} />{" "}
                                     +
                                 </div>
                                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">

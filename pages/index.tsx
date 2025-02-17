@@ -31,7 +31,7 @@ const Home = (): JSX.Element => {
                         className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
                     >
                         Hello, my name is Danil Diachenko, and I'm a full-stack
-                        web developer. Welcome to my website! Here, you can
+                        web developer with 4+ years in IT. Welcome to my website! Here, you can
                         explore my portfolio, learn about the services I offer,
                         discover my skills, and get in touch with me.
                     </motion.p>
@@ -49,7 +49,7 @@ const Home = (): JSX.Element => {
                     </motion.div>
                 </div>
             </div>
-            <div className="w-[1200px] h-full absolute right-0 bottom-0">
+            <div className="w-[1600px] h-full absolute right-0 bottom-0">
                 <div
                     className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right 
         xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge tranlate-z-0"
