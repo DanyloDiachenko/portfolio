@@ -99,7 +99,7 @@ const aboutData: IAboutDataItem[] = [
             },
             {
                 title: "Backend Developer - no commerce",
-                stage: "Sep 2023 - now",
+                stage: "Sep 2023 - Jul 2024",
             },
             {
                 title: "Web Full Stack Developer - no commerce",
