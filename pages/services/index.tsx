@@ -36,6 +36,10 @@ const Services = (): JSX.Element => {
                             websites. From minor tweaks to large-scale projects,
                             I ensure quality and innovation at every stage of
                             development.
+                            <br />
+                            While creatign websites, I focus on the following
+                            aspects: architecture, technical stack, performance, responsiveness, accessibility
+                            and SEO optimization.
                         </motion.p>
                     </div>
                     <motion.div
