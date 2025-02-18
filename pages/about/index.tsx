@@ -22,13 +22,12 @@ import {
     SiPostgresql,
     SiSwagger,
     SiRedux,
-    SiVisualstudio,
 } from "react-icons/si";
+import { DiVisualstudio } from "react-icons/di";
+import { PiFileCSharpFill } from "react-icons/pi";
 import { TbBrandNextjs, TbSeo } from "react-icons/tb";
 import { motion } from "framer-motion";
-
 import { fadeIn } from "../../variants";
-import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
 interface IAboutDataItem {
@@ -46,7 +45,12 @@ const aboutData: IAboutDataItem[] = [
         info: [
             {
                 title: "Programming Languages",
-                icons: [<FaJs />, <SiTypescript />, <SiPython />],
+                icons: [
+                    <FaJs />,
+                    <SiTypescript />,
+                    <PiFileCSharpFill />,
+                    <SiPython />,
+                ],
             },
             {
                 title: "Frontend Development",
@@ -82,7 +86,7 @@ const aboutData: IAboutDataItem[] = [
             },
             {
                 title: "Additional Skills",
-                icons: [<FaGithub />, <SiVisualstudio />],
+                icons: [<FaGithub />, <DiVisualstudio />],
             },
         ],
     },
@@ -128,15 +132,6 @@ const About = (): JSX.Element => {
     return (
         <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
             <Circles />
-            <motion.div
-                variants={fadeIn("right", 0.2)}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
-                className="hidden xl:flex absolute bottom-0 -left-[370px]"
-            >
-                <Avatar />
-            </motion.div>
             <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 max-xl:overflow-y-auto">
                 <div className="flex-1 flex flex-col justify-center">
                     <motion.h1
@@ -156,12 +151,22 @@ const About = (): JSX.Element => {
                         exit="hidden"
                         className="max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
                     >
-                        Two years ago, I entered into free course with frontend
+                        Four years ago, I entered into free course with frontend
                         development and after joined a startup company and
                         embarked on my career in web-development. During this
-                        time, I've been involved in both individual projects and
-                        collaborative team efforts, developing digital products
-                        for business and consumer use.
+                        two years commercial developing, I've been involved in
+                        both individual projects and collaborative team efforts,
+                        developing digital products for business and consumer
+                        use.
+                        <br />
+                        After that, I strongly started learn backend development
+                        and databases, creating my own full-stack projects and
+                        learning new technologies.
+                        <br />
+                        In 2024 I entered into Kyiv Politechnic Institute for
+                        Software Engeneering learning new technologies,
+                        programming languages and algorithms to improve my
+                        skills.
                     </motion.p>
                     <motion.div
                         variants={fadeIn("right", 0.6)}
