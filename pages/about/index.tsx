@@ -24,7 +24,7 @@ import {
     SiRedux,
 } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
-import { PiFileCSharpFill } from "react-icons/pi";
+import { TbBrandCSharp } from "react-icons/tb";
 import { TbBrandNextjs, TbSeo } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -48,8 +48,8 @@ const aboutData: IAboutDataItem[] = [
                 icons: [
                     <FaJs />,
                     <SiTypescript />,
-                    <PiFileCSharpFill />,
                     <SiPython />,
+                    <TbBrandCSharp />,
                 ],
             },
             {
