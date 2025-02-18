@@ -105,6 +105,10 @@ const aboutData: IAboutDataItem[] = [
                 title: "Web Full Stack Developer - no commerce",
                 stage: "Jul 2024 - now",
             },
+            {
+                title: "Team Lead of INT20H Hackathon team - second place",
+                stage: "Feb 2025",
+            },
         ],
     },
     {
