@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 import { fadeIn } from "../../variants";
 
-const Contact = (): JSX.Element => {
+const Contact = () => {
     const [fields, setFields] = useState({
         name: "",
         email: "",
