@@ -22,7 +22,6 @@ const Work = (): JSX.Element => {
                             My work
                             <span className="text-accent"> .</span>
                         </motion.h1>
-                        
                         <motion.p
                             variants={fadeIn("up", 0.4)}
                             initial="hidden"
