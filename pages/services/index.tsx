@@ -19,7 +19,6 @@ const Services = () => {
                             exit="hidden"
                             className="h2 xl:mt-8"
                         >
-                            
                             My services
                             <span className="text-accent"> .</span>
                         </motion.h1>
