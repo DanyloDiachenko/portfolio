@@ -20,6 +20,7 @@ const Work = (): JSX.Element => {
                             className="h2 xl:mt-12"
                         >
                             My work
+                            
                             <span className="text-accent"> .</span>
                         </motion.h1>
                         <motion.p
