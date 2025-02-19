@@ -130,7 +130,7 @@ const aboutData: IAboutDataItem[] = [
     },
 ];
 
-const About = (): JSX.Element => {
+const About = () => {
     const [index, setIndex] = useState<number>(0);
 
     return (
