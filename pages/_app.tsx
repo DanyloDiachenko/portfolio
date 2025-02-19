@@ -20,7 +20,7 @@ const metadata = {
     },
 };
 
-const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
     const router: NextRouter = useRouter();
 
     return (

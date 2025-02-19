@@ -5,7 +5,7 @@ import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 
-const Home = (): JSX.Element => {
+const Home = () => {
     return (
         <div className="bg-primary/60 h-full ">
             <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
