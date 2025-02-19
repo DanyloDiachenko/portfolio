@@ -5,7 +5,7 @@ import ServiceSlider from "../../components/ServiceSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 
-const Services = (): JSX.Element => {
+const Services = () => {
     return (
         <div className="h-full bg-primary/30 py-36 flex items-center max-xl:pt-60">
             <Circles />
