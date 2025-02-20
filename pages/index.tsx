@@ -31,7 +31,7 @@ const Home = () => {
                         className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
                     >
                         Hello, my name is Danil Diachenko, and I'm a full-stack
-                        web developer with 4+ years in IT. Welcome to my website! Here, you can
+                        web developer with 3+ years in IT. Welcome to my website! Here, you can
                         explore my portfolio, learn about the services I offer,
                         discover my skills, and get in touch with me.
                     </motion.p>
