@@ -187,7 +187,7 @@ const About = () => {
                                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                                     <CountUp
                                         start={0.0}
-                                        end={4}
+                                        end={3}
                                         duration={5}
                                         separator=" "
                                         decimals={1}
