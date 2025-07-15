@@ -11,6 +11,13 @@ const workSlides = {
         {
             images: [
                 {
+                    title: "Codefinity",
+                    description:
+                        "Education platform with a focus on programming languages and algorithms. I work here as a frontend engineer.",
+                    background: "/codefinity.png",
+                    link: "https://codefinity.com",
+                },
+                {
                     title: "Shoes",
                     description:
                         "Huge self-created full-stack project. Authentification, authorization, cart, orders, products, categories, reviews, and more.",
@@ -31,23 +38,16 @@ const workSlides = {
                     background: "/subjektiv-admin.png",
                     link: "https://github.com/DanyloDiachenko/subjektiv",
                 },
+            ],
+        },
+        {
+            images: [
                 {
                     title: "HackaChat",
                     description:
                         "Chat with AI. Optimize your time with AI bot, that creates boards, columns, tasks in Trello; integration with Slack. Hackaton project created with HackaWeb team.",
                     background: "/hackachat.png",
                     link: "https://github.com/DanyloDiachenko/hackaweb-main",
-                },
-            ],
-        },
-        {
-            images: [
-                {
-                    title: "QuizApp",
-                    description:
-                        "Make own quests, share with friends, and play. Chat with friends while testing. Create feedbacks, see leaderboards.",
-                    background: "/quiz-app.png",
-                    link: "https://github.com/DanyloDiachenko/hackaweb-test",
                 },
                 {
                     title: "Notes",
@@ -75,6 +75,13 @@ const workSlides = {
         {
             images: [
                 {
+                    title: "QuizApp",
+                    description:
+                        "Make own quests, share with friends, and play. Chat with friends while testing. Create feedbacks, see leaderboards.",
+                    background: "/quiz-app.png",
+                    link: "https://github.com/DanyloDiachenko/hackaweb-test",
+                },
+                {
                     title: "Clovin",
                     description:
                         "This showcase website represents the company Clovin and its diverse range of household chemical products. Learn more about the company, its products, and partners.",
@@ -95,6 +102,10 @@ const workSlides = {
                     background: "/seo-service.png",
                     link: "https://seo-service-iota.vercel.app/",
                 },
+            ],
+        },
+        {
+            images: [
                 {
                     title: "Fast Forge VPN",
                     description:
@@ -102,10 +113,6 @@ const workSlides = {
                     background: "/fast-forge.png",
                     link: "https://danylodiachenko.github.io/FastForgeVPN/main-page.html",
                 },
-            ],
-        },
-        {
-            images: [
                 {
                     title: "Akcel",
                     description:
@@ -127,6 +134,10 @@ const workSlides = {
                     background: "/devfinder.png",
                     link: "https://github-users-tau.vercel.app/",
                 },
+            ],
+        },
+        {
+            images: [
                 {
                     title: "INSPE",
                     description:
@@ -134,10 +145,6 @@ const workSlides = {
                     background: "/inspe.png",
                     link: "https://danylodiachenko.github.io/INSPE/",
                 },
-            ],
-        },
-        {
-            images: [
                 {
                     title: "PUPS Docs",
                     description:
@@ -159,6 +166,10 @@ const workSlides = {
                     background: "/transactions.png",
                     link: "https://github.com/DanyloDiachenko/transactions",
                 },
+            ],
+        },
+        {
+            images: [
                 {
                     title: "Epicstars",
                     description:
@@ -166,10 +177,6 @@ const workSlides = {
                     background: "/epicstars.png",
                     link: "https://epicstars-iota.vercel.app/#",
                 },
-            ],
-        },
-        {
-            images: [
                 {
                     title: "Neuroflex",
                     description:

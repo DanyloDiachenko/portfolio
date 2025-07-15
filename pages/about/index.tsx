@@ -94,20 +94,24 @@ const aboutData: IAboutDataItem[] = [
         title: "experience",
         info: [
             {
-                title: "Frontend Developer - Digital Art Agency",
+                title: "Frontend Engineer - Digital Art Agency",
                 stage: "Aug 2022 - Jul 2024",
             },
             {
-                title: "Backend Developer - no commerce",
+                title: "Backend Engineer - no commerce",
                 stage: "Sep 2023 - Jul 2024",
             },
             {
-                title: "Web Full Stack Developer - no commerce",
+                title: "Web Full Stack Engineer - no commerce",
                 stage: "Jul 2024 - now",
             },
             {
-                title: "Team Lead of INT20H Hackathon team - second place",
+                title: "Team Lead of INT20H Hackathon team",
                 stage: "Feb 2025",
+            },
+            {
+                title: "Frontend Engineer - Codefinity | Genesis tech",
+                stage: "Mar 2025 - now",
             },
         ],
     },
@@ -115,15 +119,11 @@ const aboutData: IAboutDataItem[] = [
         title: "education",
         info: [
             {
-                title: "Frontend Developepment - Front Online",
-                stage: "2022",
-            },
-            {
                 title: "Frontend Developepment - IT School GoIT",
                 stage: "2022-2023",
             },
             {
-                title: "Software engineering - Kyiv Politechnic Institute",
+                title: "Software Engineering - Kyiv Politechnic Institute",
                 stage: "2024 - now",
             },
         ],
@@ -155,13 +155,13 @@ const About = () => {
                         exit="hidden"
                         className="max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
                     >
-                        Four years ago, I entered into free course with frontend
-                        development and after joined a startup company and
-                        embarked on my career in web-development. During this
-                        two years commercial developing, I've been involved in
-                        both individual projects and collaborative team efforts,
-                        developing digital products for business and consumer
-                        use.
+                        Three years ago, I entered into free course with
+                        frontend development and after joined a startup company
+                        and embarked on my career in web-development. During
+                        this two years commercial developing, I've been involved
+                        in both individual projects and collaborative team
+                        efforts, developing digital products for business and
+                        consumer use.
                         <br />
                         After that, I strongly started learn backend development
                         and databases, creating my own full-stack projects and
@@ -171,6 +171,11 @@ const About = () => {
                         Software Engeneering learning new technologies,
                         programming languages and algorithms to improve my
                         skills.
+                        <br />
+                        Recently, I joined Codefinity as a frontend enginner.
+                        In this role, I’ve been focused on enhancing the
+                        educational platform’s core features and improving user
+                        experience.
                     </motion.p>
                     <motion.div
                         variants={fadeIn("right", 0.6)}
@@ -204,7 +209,7 @@ const About = () => {
                after:bg-white/10 after:absolute after:top-0 after:right-0"
                             >
                                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                                    <CountUp start={0} end={30} duration={5} />{" "}
+                                    <CountUp start={0} end={1000} duration={5} />{" "}
                                     +
                                 </div>
                                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
@@ -216,7 +221,7 @@ const About = () => {
                after:bg-white/10 after:absolute after:top-0 after:right-0"
                             >
                                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                                    <CountUp start={0} end={40} duration={5} />{" "}
+                                    <CountUp start={0} end={50} duration={5} />{" "}
                                     +
                                 </div>
                                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">

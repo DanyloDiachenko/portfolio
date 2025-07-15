@@ -33,9 +33,7 @@ const Services = () => {
                             solutions for web development, combining
                             cutting-edge frontend and backend technologies to
                             create dynamic, functional, and visually appealing
-                            websites. From minor tweaks to large-scale projects,
-                            I ensure quality and innovation at every stage of
-                            development.
+                            websites.
                             <br />
                             While creatign websites, I focus on the following
                             aspects: architecture, technical stack, performance, responsiveness, accessibility
