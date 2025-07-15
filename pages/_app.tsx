@@ -14,6 +14,8 @@ const metadata = {
     keywords: [
         "Danil Diachenko",
         "Diachenko Danil",
+        "Danylo Diachenko",
+        "Diachenko Danylo",
         "Danil Diachenko Portfolio",
         "Danil Diachenko Linkedin",
         "Danil Diachenko GitHub",
